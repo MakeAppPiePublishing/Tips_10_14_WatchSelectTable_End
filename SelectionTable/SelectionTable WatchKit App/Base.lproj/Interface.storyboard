@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelectionTable_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="BAL-t4-fUU"/>
+                        <table alignment="left" id="ypH-X6-dKk">
+                            <items>
+                                <tableRow identifier="row" id="kGX-N4-QPW" customClass="RowController" customModule="SelectionTable_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" spacing="4" id="vm6-Pk-mpV">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" id="eXl-EA-C6s"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="nO4-gn-L1W"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="menuImage" destination="eXl-EA-C6s" id="Gsc-5L-pwK"/>
+                                        <outlet property="menuLabel" destination="nO4-gn-L1W" id="5Nx-iV-FWG"/>
+                                        <outlet property="rowGroup" destination="vm6-Pk-mpV" id="Eop-Pe-4dr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="selectedLabel" destination="BAL-t4-fUU" id="UWt-cU-V8I"/>
+                        <outlet property="table" destination="ypH-X6-dKk" id="WYb-x3-CyA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="102"/>
+        </scene>
+    </scenes>
+</document>
